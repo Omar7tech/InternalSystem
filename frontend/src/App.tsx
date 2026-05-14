@@ -1,9 +1,9 @@
 
-import type { ReactNode } from "react"
-function App({ children }: { children?: ReactNode }) {
+import Router from "./routes/Router"
+function App() {
   return (
     <>
-      {children}
+      <Router />
     </>
   )
 }

@@ -2,15 +2,15 @@
 import { MainProviders } from "@/providers/MainProviders"
 import { Outlet } from "react-router"
 
-function MainLayout() {
+function AuthLayout() {
   return (
     <MainProviders>
       <div>
-        This is MainLayout
+        This is AuthLayout
       </div>
       <Outlet />
     </MainProviders>
   )
 }
 
-export default MainLayout
+export default AuthLayout
