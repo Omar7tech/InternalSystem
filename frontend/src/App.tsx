@@ -1,13 +1,10 @@
-import { ThemeProvider } from "@/components/theme-provider"
-import type { ReactNode } from "react"
-import Nav from "@/components/nav"
 
+import type { ReactNode } from "react"
 function App({ children }: { children?: ReactNode }) {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Nav />
+    <>
       {children}
-    </ThemeProvider>
+    </>
   )
 }
 
