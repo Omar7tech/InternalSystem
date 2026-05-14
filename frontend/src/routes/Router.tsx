@@ -1,17 +1,18 @@
 import { Routes, Route } from "react-router";
-import Home from "../pages/Home";
 import NotFound from "@/pages/errors/NotFound";
+
+import PublicRoutes from "./Public/PublicRoutes";
+import AuthRoutes from "./Auth/AuthRoutes";
 
 
 
 export default function Router() {
-    
-    return (
-        <Routes>
-            {/* Public routes */}
-            <Route path="/" element={<Home />} />
-           
-            <Route path="*" element={<NotFound />} />
-        </Routes>
-    );
+
+  return (
+    <Routes>
+      <PublicRoutes />
+      <AuthRoutes />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
 }

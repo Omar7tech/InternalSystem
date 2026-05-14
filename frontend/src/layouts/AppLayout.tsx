@@ -1,15 +1,15 @@
 
 import { Outlet } from "react-router"
 
-function AuthLayout() {
+function AppLayout() {
   return (
     <>
       <div>
-        This is AuthLayout
+        This is AppLayout
       </div>
       <Outlet />
     </>
   )
 }
 
-export default AuthLayout
+export default AppLayout
